@@ -9,29 +9,7 @@
     <meta name="screen-orientation" content="landscape">
     <meta name="full-screen" content="yes">
     <title>game</title>
-    <style>
-        @media screen and (orientation: portrait) {
-            #app {
-                -webkit-transform: rotate(90deg);
-                -moz-transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
-                transform: rotate(90deg);
-                width: 100vh;
-                height: 100vh;
-                overflow: hidden;
-            }
 
-        }
-
-        @media screen and (orientation: landscape) {
-            #app {
-                -webkit-transform: rotate(0);
-                -moz-transform: rotate(0);
-                -ms-transform: rotate(0);
-                transform: rotate(0)
-            }
-        }
-    </style>
 </head>
 
 <body>
@@ -41,5 +19,55 @@
     <!-- <script src="https://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script> -->
     <!-- <script src="https://cdn.bootcss.com/zepto/1.2.0/zepto.min.js"></script> -->
 </body>
+<script>
+    window.onload = function () {
+        var width = document.documentElement.clientWidth;
+        var height = document.documentElement.clientHeight;
+
+        if (width < height) {
+            var app = document.getElementById('app');
+            app.style.width = height + 'px';
+            app.style.height = width + 'px';
+            var topVal = (height - width) / 2;
+            var leftVal = 0 - (height - width) / 2;
+            app.style.top = topVal + 'px';
+            app.style.left = leftVal + 'px';
+            app.style.transform = 'rotate(90deg)';
+            app.style.transformOrigin = '50% 50%';
+
+        }
+        var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+        window.addEventListener(evt, function () {
+            setTimeout(function () {
+                var width = document.documentElement.clientWidth;
+                var height = document.documentElement.clientHeight;
+                var app = document.getElementById('app');
+                if (width > height) {
+                    console.log('width > height')
+                    app.style.width = width + 'px';
+                    app.style.height = height + 'px';
+                    app.style.top = 0;
+                    app.style.left = 0;
+                    app.style.transform = 'none';
+                    app.style.transformOrigin = '50% 50%';
+                }
+                else {
+                    console.log('width < height')
+                    app.style.width = height + 'px';
+                    app.style.height = width + 'px';
+                    var topVal = (height - width) / 2;
+                    var leftVal = 0 - (height - width) / 2;
+                    app.style.top = topVal + 'px';
+                    app.style.left = leftVal + 'px';
+                    app.style.transform = 'rotate(90deg)';
+                    app.style.transformOrigin = '50% 50%';
+
+                }
+            }, 300)
+
+        }, false);
+    }
+
+</script>
 
 </html>

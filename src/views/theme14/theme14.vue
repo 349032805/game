@@ -1,40 +1,6 @@
 <template>
   <div class="theme14">
-      <div class="form">
-        <p class="time-demo">{{timeStr}}</p>
-        <div class="box">
-          <div class="phone-box">
-             <img src="../../images/person_icon.png" class="person-icon">
-             <input type="tel" placeholder="请输入您的手机号" maxlength="11" v-model="telephone">
-           </div>
-
-          <div class="verifycode-box clearfix">
-             <img src="../../images/phone_icon.png" class="phone-icon">
-             <input type="tel" placeholder="请输入验证码" maxlength="6" v-model="code">
-             <!-- <button type="button">获取验证码</button> -->
-             <countDownBtn v-on:send="getPhone" ref="countDownBtn"></countDownBtn>
-          </div>
-
-           <div class="password-box">
-             <img src="../../images/lock_icon.png" class="lock-icon">
-             <input type="text" placeholder="请设置6~12位登录密码" maxlength="12" v-model="password">
-           </div>
-        </div>
-
-        <div class="opt">
-           <!-- 急速借款 -->
-           <button type="button" class="sure-btn" @click="submitForm">确定</button>
-           <!-- 使用协议 -->
-           <div class="agreement">
-             <i></i>
-             <span>注册即代表同意 <span style="color:#fdff3a" @click="gotoAgreement">《用户使用协议》</span></span>
-           </div>
-
-        </div>
-
-      </div>
-
-      <tipModal :showTip.sync="showTip" :message="message"></tipModal>
+    <img src="../../images/bg_test.png" class="banner">
   </div>
 </template>
 
