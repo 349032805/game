@@ -5,6 +5,7 @@ Vue.use(Router)
 //异步路由
 const theme14 = r => require.ensure([], () => r(require('../views/theme14/theme14')), 'theme14')
 const agreement = r => require.ensure([], () => r(require('../views/agreement')), 'agreement')
+const loading = r => require.ensure([], () => r(require('../views/loading/loading')), 'loading')
 export default new Router({
   routes: [
     {
@@ -20,6 +21,11 @@ export default new Router({
       path: '/agreement',
       name: 'agreement',
       component: agreement
+    },
+    {
+      path: '/loading',
+      name: 'loading',
+      component: loading
     }
 
   ]
