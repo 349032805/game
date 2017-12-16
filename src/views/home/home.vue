@@ -36,10 +36,23 @@
     <div class="footer">
         <div class="footer-container">
             <div class="account">
+                <!-- 头像和手机号 -->
                 <div class="head-phone">
                     <img src="../../images/avatar.png" class="head">
                     <div class="phone-box">187XXXX1893</div>
                 </div>
+
+                <!-- 钻石余额 -->
+                <div class="diamonds-num">
+                    <img src="../../images/diamonds.png" class="diamonds">
+                    <div class="account-box">999999</div>
+                </div>
+
+            </div>
+
+            <!-- 右下角宝箱 -->
+            <div class="chest">
+                <img src="../../images/shopping.png" class="shopping">
             </div>
         </div>
     </div>

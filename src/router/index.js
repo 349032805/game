@@ -5,13 +5,15 @@ Vue.use(Router)
 //异步路由
 const theme14 = r => require.ensure([], () => r(require('../views/theme14/theme14')), 'theme14')
 const agreement = r => require.ensure([], () => r(require('../views/agreement')), 'agreement')
-
 const shop = r => require.ensure([], () => r(require('../views/shop/shop')), 'shop')
 const loadingGame = r => require.ensure([], () => r(require('../views/loading/loadingGame')), 'loadingGame')
 const home = r => require.ensure([], () => r(require('../views/home/home')), 'home')
 const loadingYYL = r => require.ensure([], () => r(require('../views/loading/loadingYYL')), 'loadingYYL')
 const buyCoins = r => require.ensure([], () => r(require('../views/shop/buyCoins')), 'buyCoins')
 const buyDiamonds = r => require.ensure([], () => r(require('../views/shop/buyDiamonds')), 'buyDiamonds')
+const rechargeAgreement = r => require.ensure([], () => r(require('../views/tipModal/rechargeAgreement')), 'rechargeAgreement')
+const systemTip = r => require.ensure([], () => r(require('../views/tipModal/systemTip')), 'systemTip')
+const errorTip = r => require.ensure([], () => r(require('../views/tipModal/errorTip')), 'errorTip')
 export default new Router({
   linkActiveClass: "active",
   routes: [
@@ -60,6 +62,22 @@ export default new Router({
       path: '/loading/loadingYYL',
       name: 'loadingYYL',
       component: loadingYYL
-    }
+    },
+    {
+      path: '/tipModal/rechargeAgreement',
+      name: 'rechargeAgreement',
+      component: rechargeAgreement
+    },
+    {
+      path: '/tipModal/systemTip',
+      name: 'systemTip',
+      component: systemTip
+    },
+    {
+      path: '/tipModal/errorTip',
+      name: 'errorTip',
+      component: errorTip
+    },
+
   ]
 })
