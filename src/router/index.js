@@ -9,7 +9,7 @@ const agreement = r => require.ensure([], () => r(require('../views/agreement'))
 const shop = r => require.ensure([], () => r(require('../views/shop/shop')), 'shop')
 const loadingGame = r => require.ensure([], () => r(require('../views/loading/loadingGame')), 'loadingGame')
 const home = r => require.ensure([], () => r(require('../views/home/home')), 'home')
-const loadingYyl = r => require.ensure([], () => r(require('../views/loading/loadingYyl')), 'loadingYyl')
+const loadingYYL = r => require.ensure([], () => r(require('../views/loading/loadingYYL')), 'loadingYYL')
 export default new Router({
   linkActiveClass: "active",
   routes: [
@@ -41,10 +41,17 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: home
+<<<<<<< HEAD
+    },{
+      path: '/loading/loadingYYL',
+      name: 'loadingYYL',
+      component: loadingYYL
+=======
     }, {
       path: '/loading/loadingYyl',
       name: 'loadingYyl',
       component: loadingYyl
+>>>>>>> fe4eb0445bdde7838b325546f63327ff7d741c89
     },
   ]
 })
