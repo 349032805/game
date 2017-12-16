@@ -10,6 +10,8 @@ const shop = r => require.ensure([], () => r(require('../views/shop/shop')), 'sh
 const loadingGame = r => require.ensure([], () => r(require('../views/loading/loadingGame')), 'loadingGame')
 const home = r => require.ensure([], () => r(require('../views/home/home')), 'home')
 const loadingYYL = r => require.ensure([], () => r(require('../views/loading/loadingYYL')), 'loadingYYL')
+const buyCoins = r => require.ensure([], () => r(require('../views/shop/buyCoins')), 'buyCoins')
+const buyDiamonds = r => require.ensure([], () => r(require('../views/shop/buyDiamonds')), 'buyDiamonds')
 export default new Router({
   linkActiveClass: "active",
   routes: [
@@ -30,7 +32,19 @@ export default new Router({
     {
       path: '/shop',
       name: 'shop',
-      component: shop
+      component: shop,
+      children: [
+        {
+          path: '/shop/buyCoins',
+          name: 'buyCoins',
+          component: buyCoins
+        },
+        {
+          path: '/shop/buyDiamonds',
+          name: 'buyDiamonds',
+          component: buyDiamonds
+        },
+      ]
     },
     {
       path: '/loading/loadingGame',
@@ -41,7 +55,8 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: home
-    },{
+    },
+    {
       path: '/loading/loadingYYL',
       name: 'loadingYYL',
       component: loadingYYL
