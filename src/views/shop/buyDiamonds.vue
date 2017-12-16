@@ -11,7 +11,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>
@@ -19,7 +19,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>
@@ -27,7 +27,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>
@@ -35,7 +35,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>
@@ -43,7 +43,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>
@@ -51,7 +51,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>
@@ -59,7 +59,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>
@@ -67,7 +67,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>
@@ -75,7 +75,7 @@
             </li>
             <li>
                 <div class="content">
-                    <p>zhuanshi</p>
+                    <p>50钻</p>
                     <i class="coin-icon"></i>
                     <span>1000金币</span>
                 </div>

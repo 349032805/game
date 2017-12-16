@@ -7,10 +7,10 @@
             <router-link  to="/shop/buyCoins" class="tab-items gold-recharge">
             金币充值
             </router-link>
-            <router-link  to="/" class="tab-items gold-to-diamond">
+            <router-link  to="/shop/coinsToDiamonds" class="tab-items gold-to-diamond">
             币兑钻石
             </router-link>
-            <router-link  to="/" class="tab-items diamond-to-gold">
+            <router-link  to="/shop/diamondsToCoins" class="tab-items diamond-to-gold">
             钻石兑币
             </router-link>
         </div>
