@@ -129,6 +129,9 @@ export default {
           display: block;
           color: gold;
           line-height: 1.8rem;
+          background: -webkit-linear-gradient(top , rgb(255, 251, 90) 16% , rgb(255, 170, 37) 64%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
         }
 
         .coin-icon {

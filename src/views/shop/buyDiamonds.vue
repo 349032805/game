@@ -3,83 +3,83 @@
         <ul>
             <li>
                 <div class="content">
-                    <p>790游戏</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <p>50钻</p>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
             <li>
                 <div class="content">
                     <p>50钻</p>
-                    <i class="coin-icon"></i>
-                    <span>1000金币</span>
+                    <i class="diamond-icon"></i>
+                    <!--<span>1000金币</span>-->
                 </div>
-                <button type="button">￥ 10</button>
+                <button type="button">￥ 50</button>
             </li>
         </ul>
     </div>
@@ -128,16 +128,19 @@ export default {
         > span {
           display: block;
           color: gold;
+          background: -webkit-linear-gradient(top , rgb(255, 251, 90) 16% , rgb(255, 170, 37) 64%);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
           line-height: 1.8rem;
         }
 
-        .coin-icon {
+        .diamond-icon {
           position: absolute;
           top: 0;
           left: 0;
           width: 2.293333rem;
           height: 2.6rem;
-          background: url("../../images/shop_bi2@3x.png") no-repeat 0 0/cover;
+          background: url("../../images/shop_zuan2@3x.png") no-repeat 0 0/cover;
         }
       }
       button {
