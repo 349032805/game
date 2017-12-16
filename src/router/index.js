@@ -6,7 +6,9 @@ Vue.use(Router)
 const theme14 = r => require.ensure([], () => r(require('../views/theme14/theme14')), 'theme14')
 const agreement = r => require.ensure([], () => r(require('../views/agreement')), 'agreement')
 const loading = r => require.ensure([], () => r(require('../views/loading/loading')), 'loading')
+const shop = r => require.ensure([], () => r(require('../views/shop/shop')), 'shop')
 export default new Router({
+  linkActiveClass: "active",
   routes: [
     {
       path: '/',
@@ -26,7 +28,11 @@ export default new Router({
       path: '/loading',
       name: 'loading',
       component: loading
+    },
+    {
+      path:'/shop',
+      name:'shop',
+      component:shop
     }
-
   ]
 })
