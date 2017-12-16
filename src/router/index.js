@@ -10,6 +10,9 @@ const shop = r => require.ensure([], () => r(require('../views/shop/shop')), 'sh
 const loadingGame = r => require.ensure([], () => r(require('../views/loading/loadingGame')), 'loadingGame')
 const home = r => require.ensure([], () => r(require('../views/home/home')), 'home')
 const loadingYYL = r => require.ensure([], () => r(require('../views/loading/loadingYYL')), 'loadingYYL')
+const rechargeAgreement = r => require.ensure([], () => r(require('../views/tipModal/rechargeAgreement')), 'rechargeAgreement')
+const systemTip = r => require.ensure([], () => r(require('../views/tipModal/systemTip')), 'systemTip')
+const errorTip = r => require.ensure([], () => r(require('../views/tipModal/errorTip')), 'errorTip')
 export default new Router({
   linkActiveClass: "active",
   routes: [
@@ -41,17 +44,26 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: home
-<<<<<<< HEAD
-    },{
+    },
+    {
       path: '/loading/loadingYYL',
       name: 'loadingYYL',
       component: loadingYYL
-=======
-    }, {
-      path: '/loading/loadingYyl',
-      name: 'loadingYyl',
-      component: loadingYyl
->>>>>>> fe4eb0445bdde7838b325546f63327ff7d741c89
+    },
+    {
+      path: '/tipModal/rechargeAgreement',
+      name: 'rechargeAgreement',
+      component: rechargeAgreement
+    },
+    {
+      path: '/tipModal/systemTip',
+      name: 'systemTip',
+      component: systemTip
+    },
+    {
+      path: '/tipModal/errorTip',
+      name: 'errorTip',
+      component: errorTip
     },
   ]
 })
