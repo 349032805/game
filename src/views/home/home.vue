@@ -26,6 +26,9 @@
             </li>
              <li class="card active-card">
                 <img src="../../images/game2.png" class="active-card">
+                <span class="surplus-coins">
+                    <span>剩余</span><span>99999</span><span>金币</span>
+                </span>
             </li>
              <li class="card small-card">
                 <img src="../../images/game3.png">
