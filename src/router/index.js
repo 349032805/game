@@ -41,17 +41,10 @@ export default new Router({
       path: '/home',
       name: 'home',
       component: home
-<<<<<<< HEAD
     },{
       path: '/loading/loadingYYL',
       name: 'loadingYYL',
       component: loadingYYL
-=======
-    }, {
-      path: '/loading/loadingYyl',
-      name: 'loadingYyl',
-      component: loadingYyl
->>>>>>> fe4eb0445bdde7838b325546f63327ff7d741c89
-    },
+    }
   ]
 })
