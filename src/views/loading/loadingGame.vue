@@ -1,5 +1,5 @@
 <template>
-  <div class="loading">
+  <div class="loading-game">
     <div class="title">
       <transition name="move">
         <img src="../../images/loading_game.png">
@@ -34,7 +34,7 @@ export default {
     left: 12.4rem;
   }
 }
-.loading {
+.loading-game {
   width: 100%;
   height: 100%;
   background: url("../../images/background.png") no-repeat center/cover;
