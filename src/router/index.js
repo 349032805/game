@@ -5,7 +5,6 @@ Vue.use(Router)
 //异步路由
 const theme14 = r => require.ensure([], () => r(require('../views/theme14/theme14')), 'theme14')
 const agreement = r => require.ensure([], () => r(require('../views/agreement')), 'agreement')
-
 const shop = r => require.ensure([], () => r(require('../views/shop/shop')), 'shop')
 const loadingGame = r => require.ensure([], () => r(require('../views/loading/loadingGame')), 'loadingGame')
 const home = r => require.ensure([], () => r(require('../views/home/home')), 'home')
@@ -65,5 +64,6 @@ export default new Router({
       name: 'errorTip',
       component: errorTip
     },
+
   ]
 })
