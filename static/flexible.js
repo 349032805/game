@@ -77,7 +77,12 @@
     // 自定义页面元素的fontsize，方便rem的配置
     function refreshRem(){
         var width = docEl.getBoundingClientRect().width;
+        var height = docEl.getBoundingClientRect().height;
         //屏幕信息，屏幕宽度，bound：绑定；rect：矩形
+        // 屏幕变化 用小的
+        if(width > height ){
+            width = height
+        }
         if (width / dpr > 640) {
             width = 640 * dpr;
         }
