@@ -49,6 +49,11 @@
                 </div>
 
             </div>
+
+            <!-- 右下角宝箱 -->
+            <div class="chest">
+                <img src="../../images/shopping.png" class="shopping">
+            </div>
         </div>
     </div>
 
