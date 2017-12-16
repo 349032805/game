@@ -5,13 +5,13 @@
         <router-link to="/home">首页</router-link>
         <router-link to="/loading/loadingGame">loadingGame</router-link>
         <router-link to="/loading/loadingYYL">loadingYyl</router-link>
-        <router-link to="/agreement">页面1</router-link>
+        <router-link to="/shop">shop</router-link>
         <router-link to="/agreement">页面1</router-link>
         <router-link to="/agreement">页面1</router-link>
         <button type="button" @click="closeModal">关闭列表</button>
     </div>
 
-    
+
     <button type="button" @click="openModal" v-show="showModal == false" class="opt-btn">打开列表</button>
   </div>
 </template>

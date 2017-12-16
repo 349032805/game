@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
+
 Vue.use(Router)
 
 //异步路由
@@ -35,6 +36,7 @@ export default new Router({
       path: '/shop',
       name: 'shop',
       component: shop,
+      redirect: {name:'buyDiamonds'},
       children: [
         {
           path: '/shop/buyCoins',
