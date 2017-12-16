@@ -30,11 +30,19 @@
              <li class="card small-card">
                 <img src="../../images/game3.png">
             </li>
-
         </ul>
     </div>
 
-
+    <div class="footer">
+        <div class="footer-container">
+            <div class="account">
+                <div class="head-phone">
+                    <img src="../../images/avatar.png" class="head">
+                    <div class="phone-box">187XXXX1893</div>
+                </div>
+            </div>
+        </div>
+    </div>
 
   </div>
 </template>
