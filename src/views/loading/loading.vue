@@ -16,7 +16,9 @@
     </div>
     <div class="text">
       <img src="../../images/loading.png">
-      <i class="spot"></i>
+      <div class="spot">
+        <i></i>
+      </div>
     </div>
   </div>
 </template>
@@ -123,11 +125,26 @@
     
   }
   .text{
-    width: 10.16rem;
+    width: 100%;
+    position: relative;
     img{
       width: 2.066667rem;
       display: block;
       margin: 0 auto;
+    }
+    .spot{
+      position: absolute;
+      top :0.1rem;
+      left: 50%;
+      transform: translateX(1.066667rem);
+      i{
+        display: inline-block;
+        width: 0.2rem;
+        height: 0.2rem;
+        padding: 0.2rem;
+        background: url("../../images/spot.png") repeat-x center;
+        background-size: 0.2rem 0.2rem;
+      }
     }
   }
 }
