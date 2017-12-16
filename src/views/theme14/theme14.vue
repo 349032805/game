@@ -28,7 +28,7 @@ export default {
     closeModal() {
       this.showModal = false;
     },
-    openModal(){
+    openModal() {
       this.showModal = true;
     }
   }
