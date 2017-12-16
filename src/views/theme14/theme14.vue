@@ -3,7 +3,7 @@
     <img src="../../images/bg_test.png" class="banner">
 
     <div class="page-modal" v-show="showModal">
-        <router-link to="/agreement">首页</router-link>
+        <router-link to="/home">首页</router-link>
         <router-link to="/loading">loading</router-link>
         <router-link to="/agreement">页面1</router-link>
         <router-link to="/agreement">页面1</router-link>
