@@ -4,7 +4,7 @@
     <div class="page-modal" v-show="showModal">
         <router-link to="/agreement">首页</router-link>
         <router-link to="/loading/loadingGame">loadingGame</router-link>
-        <router-link to="/loading/loadingYyl">loadingYyl</router-link>
+        <router-link to="/loading/loadingYYL">loadingYyl</router-link>
         <router-link to="/agreement">页面1</router-link>
         <router-link to="/agreement">页面1</router-link>
         <router-link to="/agreement">页面1</router-link>
