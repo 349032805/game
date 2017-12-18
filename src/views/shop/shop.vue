@@ -7,10 +7,10 @@
             <router-link  to="/shop/buyCoins" class="tab-items gold-recharge">
             金币充值
             </router-link>
-            <router-link  to="/shop/coinsToDiamonds" class="tab-items gold-to-diamond">
+            <router-link  to="/shop/coinToDiamond" class="tab-items gold-to-diamond">
             币兑钻石
             </router-link>
-            <router-link  to="/shop/diamondsToCoins" class="tab-items diamond-to-gold">
+            <router-link  to="/shop/diamondToCoin" class="tab-items diamond-to-gold">
             钻石兑币
             </router-link>
         </div>
@@ -20,107 +20,36 @@
                 <span class="count">222222</span>
             </div>
             <div class="promise">充值约定</div>
+            <div class="close" @click="back"></div>
         </div>
         <div class="broadcast">
+          <i class="broadcast-icon"></i>
+          <marquee direction=left behavior=scroll>鸿运当头，用户XXX在摇摇乐中一把赢了900个信用钻石,用户XXX在摇摇乐中一把赢了900个信用钻石</marquee>
         </div>
         <router-view></router-view>
-        <!-- <div class="buy-coins">
-            <ul>
-                <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               <li>
-                    <div class="content">
-                        <p>790游戏</p>
-                        <i class="coin-icon"></i>
-                        <span>1000金币</span>
-                    </div>
-                    <button type="button">￥ 10</button>
-                </li>
-               
-                
-            </ul>
-        </div> -->
         <div class="footer">
             <ul>
                 <li>充值比例：1元=信用钻石</li>
-                <li>这里是一些注意事项,简单xxxxxxxxxxxxxxxxxx</li>
+                <li>
+                    <span>注意：</span>
+                    <span>这里是一些注意事项,简单xxxxxxxxxxxxxxxxxx这里</span>
+                    </li>
                 <li>摇摇乐：200个游戏币</li>
             </ul>
         </div>
     </div>
 </template>
 <script type="text/ecmascript-6">
-export default {};
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    back() {
+      this.$router.push("/home");
+    }
+  }
+};
 </script>
 <style lang="less">
 .shop {
@@ -188,6 +117,7 @@ export default {};
     }
     .promise {
       position: absolute;
+      font-weight: bold;
       top: 0.076667rem;
       left: 4rem;
       height: 0.8rem;
@@ -197,71 +127,38 @@ export default {};
       padding: 0 0.533333rem;
       color: #928f76;
     }
+    .close {
+      position: absolute;
+      top: 0.16rem;
+      right: 0.48rem;
+      width: 0.786667rem;
+      height: 0.746667rem;
+      background: url("../../images/shop_guanbi@3x.png") no-repeat center
+        center/cover;
+    }
   }
   .broadcast {
     position: absolute;
     top: 1.333333rem;
     left: 3.4rem;
     width: 10.24rem;
-    height: 0.48rem;
-    line-height: 0.48rem;
+    height: 0.58rem;
+    line-height: 0.58rem;
     border-radius: 0.24rem;
     background-color: #302c1e;
+    .broadcast-icon{
+      position: absolute;
+      width: .666667rem;
+      height: .48rem;
+      background: url('../../images/shop_laba@3x.png') no-repeat center center/cover;
+    }
+    marquee{
+      position: relative;
+      color: #dac691;
+      left: .453333rem;
+      width: 8.666667rem;
+    }
   }
-//   .buy-coins {
-//     position: absolute;
-//     display: flex;
-//     top: 2.1rem;
-//     left: 4rem;
-//     width: 13.2rem;
-//     height: 6rem;
-//     text-align: center;
-//     > ul {
-//       display: flex;
-//       flex-wrap: wrap;
-//       justify-content: space-around;
-//       width: 100%;
-//       li {
-//         //   border: 1px solid yellow;
-//         position: relative;
-//         color: #fffad0;
-//         font-size: 0.4rem;
-//         .content {
-//           width: 2.293333rem;
-//           height: 2.6rem;
-//           background: url("../../images/shop_bin-beijing@3x.png") no-repeat 0 0/cover;
-//           > p {
-//             line-height: 1.1rem;
-//             color: #fffad0;
-//             font-weight: lighter;
-//           }
-//           > span {
-//               display: block;
-//               color: gold;
-//               line-height: 1.8rem;
-//           }
-
-//           .coin-icon {
-//             position: absolute;
-//             top: 0;
-//             left: 0;
-//             width: 2.293333rem;
-//             height: 2.6rem;
-//             background: url("../../images/shop_bi2@3x.png") no-repeat 0 0/cover;
-//           }
-//         }
-//         button {
-//           position: relative;
-//           top: -0.3rem;
-//           width: 2.266667rem;
-//           height: 0.773333rem;
-//           color: #fffad0;
-//           background: url("../../images/shop_duihuan-anniu@3x.png") no-repeat
-//             center center/cover;
-//         }
-//       }
-//     }
-//   }
   .footer {
     position: absolute;
     bottom: 0;
@@ -272,17 +169,32 @@ export default {};
       display: flex;
       height: 1.293333rem;
       text-align: center;
-      color: #fffad0;
+      color: #928f76;
       font-size: 0.32rem;
       justify-content: space-around;
       align-items: center;
+      li {
+        box-sizing: border-box;
+        height: 1.293333rem;
+        line-height: 1.293333rem;
+      }
       li:nth-child(1) {
         flex: 2;
       }
       li:nth-child(2) {
-        flex: 3;
+        flex: 4;
         border-left: 0.013333rem solid #aa996a;
         border-right: 0.013333rem solid #aa996a;
+        span {
+          display: inline-block;
+        }
+        span:nth-child(1) {
+          flex: 1;
+          height: 0.533333rem;
+        }
+        span:nth-child(2) {
+          flex: 8;
+        }
       }
       li:nth-child(3) {
         flex: 2;

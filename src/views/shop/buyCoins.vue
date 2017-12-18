@@ -7,7 +7,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -15,7 +15,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -23,7 +23,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -31,7 +31,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -39,7 +39,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -47,7 +47,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -55,7 +55,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -63,7 +63,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -71,7 +71,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
       <li>
         <div class="content">
@@ -79,7 +79,7 @@
           <i class="coin-icon"></i>
           <span>1000金币</span>
         </div>
-        <button type="button"><span>￥ 10</span></button>
+        <button type="button"><span>￥10</span></button>
       </li>
     </ul>
   </div>
