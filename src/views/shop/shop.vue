@@ -47,7 +47,13 @@ export default {
   methods: {
     back() {
       this.$router.push("/home");
+    },
+    prevent(e) {
+      e.preventDefault();
     }
+  },
+  mounted() {
+    window.addEventListener("touchmove",this.prevent);
   }
 };
 </script>
@@ -146,16 +152,17 @@ export default {
     line-height: 0.58rem;
     border-radius: 0.24rem;
     background-color: #302c1e;
-    .broadcast-icon{
+    .broadcast-icon {
       position: absolute;
-      width: .666667rem;
-      height: .48rem;
-      background: url('../../images/shop_laba@3x.png') no-repeat center center/cover;
+      width: 0.666667rem;
+      height: 0.48rem;
+      background: url("../../images/shop_laba@3x.png") no-repeat center
+        center/cover;
     }
-    marquee{
+    marquee {
       position: relative;
       color: #dac691;
-      left: .633333rem;
+      left: 0.633333rem;
       width: 8.666667rem;
     }
   }
