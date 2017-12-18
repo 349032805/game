@@ -111,7 +111,7 @@ export default {
         display: inline-block;
         position: relative;
         height: 0.8rem;
-        line-height: 0.8rem;
+        line-height: 0.9rem;
         vertical-align: top;
       }
     }
@@ -155,7 +155,7 @@ export default {
     marquee{
       position: relative;
       color: #dac691;
-      left: .453333rem;
+      left: .633333rem;
       width: 8.666667rem;
     }
   }
