@@ -12,7 +12,10 @@
         <div class="notice">
             <img src="../../images/notice.png">
         </div>
-        <span class="overflow">鸿运当头，用户XXX在摇摇乐中一把赢了900个信用钻石,用户XXX在摇摇乐中一把赢了900个信用钻石</span>
+        <div class="message">
+            <marquee direction=left behavior=scroll>鸿运当头，用户XXX在摇摇乐中一把赢了900个信用钻石,用户XXX在摇摇乐中一把赢了900个信用钻石</marquee>
+        </div>
+
     </div>
 
     <div class="item">
