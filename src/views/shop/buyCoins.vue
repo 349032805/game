@@ -121,12 +121,14 @@
           height: 2.6rem;
           background: url("../../images/shop_bin-beijing@3x.png") no-repeat 0 0/cover;
           > p {
+            font-size: .32rem;
             line-height: 1.1rem;
             color: #fffad0;
             font-weight: lighter;
           }
           > span {
             display: block;
+            font-size: .32rem;
             color: gold;
             line-height: 1.8rem;
             background: -webkit-linear-gradient(top, rgb(255, 251, 90) 16%, rgb(255, 170, 37) 64%);
@@ -140,11 +142,12 @@
             left: 0;
             width: 2.293333rem;
             height: 2.6rem;
-            background: url("../../images/shop_bi2@3x.png") no-repeat 0 0/cover;
+            background: url("../../images/shop_bi2@3x.png") no-repeat 0 -.093333rem/cover;
           }
         }
         button {
           position: relative;
+          font-size: .4rem;
           top: -0.3rem;
           width: 2.266667rem;
           height: 0.773333rem;

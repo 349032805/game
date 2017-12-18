@@ -85,6 +85,7 @@ export default {
       color: #aa996a;
       background: url("../../images/shop_anniu2@3x.png") no-repeat center
         center/cover;
+        text-shadow: .026667rem .046667rem 0 #333;
     }
     .active {
       color: #fffad0;
@@ -111,7 +112,7 @@ export default {
       .diamond-icon {
         display: inline-block;
         position: relative;
-        top: -0.053333rem;
+        top: -0.12rem;
         width: 0.733333rem;
         height: 0.733333rem;
         background: url("../../images/shop_zuan-geshu@3x.png") no-repeat center
