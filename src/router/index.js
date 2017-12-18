@@ -12,6 +12,8 @@ const home = r => require.ensure([], () => r(require('../views/home/home')), 'ho
 const loadingYYL = r => require.ensure([], () => r(require('../views/loading/loadingYYL')), 'loadingYYL')
 const buyCoins = r => require.ensure([], () => r(require('../views/shop/buyCoins')), 'buyCoins')
 const buyDiamonds = r => require.ensure([], () => r(require('../views/shop/buyDiamonds')), 'buyDiamonds')
+const coinToDiamond = r => require.ensure([], () => r(require('../views/shop/coinToDiamond')), 'coinToDiamond')
+const diamondToCoin = r => require.ensure([], () => r(require('../views/shop/diamondToCoin')), 'diamondToCoin')
 const rechargeAgreement = r => require.ensure([], () => r(require('../views/tipModal/rechargeAgreement')), 'rechargeAgreement')
 const systemTip = r => require.ensure([], () => r(require('../views/tipModal/systemTip')), 'systemTip')
 const errorTip = r => require.ensure([], () => r(require('../views/tipModal/errorTip')), 'errorTip')
@@ -48,6 +50,16 @@ export default new Router({
           path: '/shop/buyDiamonds',
           name: 'buyDiamonds',
           component: buyDiamonds
+        },
+        {
+          path: '/shop/coinToDiamond',
+          name: 'coinToDiamond',
+          component: coinToDiamond
+        },
+        {
+          path: '/shop/diamondToCoin',
+          name: 'diamondToCoin',
+          component: diamondToCoin
         },
       ]
     },
