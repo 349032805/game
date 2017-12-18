@@ -35,6 +35,19 @@
       opacity: 0.6;
     }
   }
+
+// 跑马灯
+@-webkit-keyframes marquee {
+    0% { left: 0; }
+    100% { left: -100%; }
+}
+@keyframes marquee {
+  0%{left:0}
+  100%{left: -100%}
+}
+
+
+
 .home {
     width: 17.786667rem;
     height: 10rem;
@@ -94,14 +107,14 @@
             }
         }
 
-        span {
-            margin-left: .533333rem;
+        .message {
+            margin-left: .3rem;
             color: #9d8544;
             font-size: .293333rem;
             width: 9.2rem;
-            display: block;
             float: left;
         }
+
     }
 
     
