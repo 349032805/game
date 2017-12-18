@@ -29,12 +29,16 @@
         <router-view></router-view>
         <div class="footer">
             <ul>
-                <li>充值比例：1元=信用钻石</li>
+                <li>
+                  <p>充值比例：1元=信用钻石</p>
+                </li>
                 <li>
                     <span>注意：</span>
                     <span>这里是一些注意事项,简单xxxxxxxxxxxxxxxxxx这里</span>
                     </li>
-                <li>摇摇乐：200个游戏币</li>
+                <li>
+                  <p>摇摇乐：200个游戏币</p>
+                </li>
             </ul>
         </div>
     </div>
@@ -53,7 +57,7 @@ export default {
     }
   },
   mounted() {
-    window.addEventListener("touchmove",this.prevent);
+    window.addEventListener("touchmove", this.prevent);
   }
 };
 </script>
@@ -162,8 +166,8 @@ export default {
     marquee {
       position: relative;
       color: #dac691;
-      left: 0.633333rem;
-      width: 8.666667rem;
+      left: 0.9rem;
+      width: 9.3rem;
     }
   }
   .footer {
@@ -187,11 +191,15 @@ export default {
       }
       li:nth-child(1) {
         flex: 2;
+        padding-top: .27rem;
+        p {
+          height: 0.8rem;
+          line-height: 0.8rem;
+          border-right: 0.013333rem solid #aa996a;
+        }
       }
       li:nth-child(2) {
         flex: 4;
-        border-left: 0.013333rem solid #aa996a;
-        border-right: 0.013333rem solid #aa996a;
         span {
           display: inline-block;
         }
@@ -205,6 +213,12 @@ export default {
       }
       li:nth-child(3) {
         flex: 2;
+        padding-top: .27rem;
+        p {
+          border-left: 0.013333rem solid #aa996a;
+          height: .8rem;
+          line-height: .8rem;
+        }
       }
     }
   }
