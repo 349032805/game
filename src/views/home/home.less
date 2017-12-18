@@ -1,6 +1,43 @@
+@keyframes move {
+    0% {
+        left: -7.333333rem;
+    }
+   
+    100% {
+      left: 20rem;
+    }
+  }
+
+  @keyframes star {
+    0% {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5);
+      opacity: 0.4;
+    }
+    60% {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    70% {
+      -webkit-transform: scale(1.5);
+      transform: scale(1.5);
+      opacity: 1;
+    }
+    80% {
+      -webkit-transform: scale(1);
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    100% {
+      -webkit-transform: scale(0.6);
+      transform: scale(0.6);
+      opacity: 0.6;
+    }
+  }
 .home {
-    width: 100%;
-    height: 100%;
+    width: 17.786667rem;
+    height: 10rem;
     background: url("../../images/background.png") no-repeat center/cover;
 
     .header {
@@ -130,6 +167,15 @@
         bottom: 0;
         z-index: 10;
 
+        .footer-light{
+            position: relative;
+            left: -1.333333rem;
+            width: 10.333333rem;
+            height: .1rem;
+            background-image:radial-gradient(5rem at center,#fff39b ,transparent);
+            animation: 4s 2s move infinite;
+        }
+
         .footer-container {
             width: 100%;
             height: 100%;
@@ -213,6 +259,24 @@
                 .shopping {
                     width: 100%;
                     height: 100%;
+                }
+                .star{
+                  width: .733333rem;
+                  height: .733333rem;
+                  position: absolute;
+                  bottom: .6rem;
+                  right: 1.3rem;
+                  background: url("../../images/star.png") no-repeat center/cover;
+                  animation: star 3s 0.2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+                }
+                .star-small{
+                  width: .56rem;
+                  height: .56rem;
+                  position: absolute;
+                  bottom: 1rem;
+                  right: 0;
+                  background: url("../../images/star_small.png") no-repeat center/cover;
+                  animation: star 3s 2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
                 }
             }
             

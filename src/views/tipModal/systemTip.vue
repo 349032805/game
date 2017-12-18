@@ -18,8 +18,8 @@ export default {
 
 <style lang="less">
 .system-tip{
-    width: 100%;
-    height: 100%;
+    width: 17.786667rem;
+    height: 10rem;
     background: rgba(0, 0, 0, 0.4) url("../../images/bg_system.png") no-repeat center;
     background-size: 12.8rem 6.6rem;
     .system-tip-warpper{

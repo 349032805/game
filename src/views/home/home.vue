@@ -37,6 +37,7 @@
     </div>
 
     <div class="footer">
+        <div class="footer-light"></div>
         <div class="footer-container">
             <div class="account">
                 <!-- 头像和手机号 -->
@@ -55,7 +56,9 @@
 
             <!-- 右下角宝箱 -->
             <div class="chest">
+                <div class="star"></div>
                 <img src="../../images/shopping.png" class="shopping">
+                <div class="star-small"></div>
             </div>
         </div>
     </div>

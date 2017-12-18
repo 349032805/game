@@ -23,8 +23,8 @@ export default {};
 
 <style lang="less">
 .agreement {
-  width: 100%;
-  height: 100%;
+  width: 17.786667rem;
+  height: 10rem;
   background: rgba(0, 0, 0, 0.4) url("../../images/bg_agreement.png") no-repeat
     center;
   background-size: 12.786667rem 8.093333rem;

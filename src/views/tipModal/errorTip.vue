@@ -16,8 +16,8 @@ export default {
 
 <style lang="less">
 .error-tip{
-    width: 100%;
-    height: 100%;
+    width: 17.786667rem;
+    height: 10rem;
     background: rgba(0, 0, 0, 0.4) url("../../images/bg_error.png") no-repeat center;
     background-size: 6.906667rem 2.373333rem;
     .error-tip-warpper{

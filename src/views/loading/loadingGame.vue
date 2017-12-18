@@ -35,8 +35,8 @@ export default {
   }
 }
 .loading-game {
-  width: 100%;
-  height: 100%;
+  width: 17.786667rem;
+  height: 10rem;
   background: url("../../images/background.png") no-repeat center/cover;
   position: relative;
   .title {

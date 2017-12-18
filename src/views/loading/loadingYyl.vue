@@ -18,8 +18,8 @@ export default {
 </script>
 <style lang="less">
 .loading-yyl {
-  width: 100%;
-  height: 100%;
+  width: 17.786667rem;
+  height: 10rem;
   background: url("../../images/background.png") no-repeat center/cover;
   position: relative;
   .yyl-avater{
