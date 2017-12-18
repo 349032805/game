@@ -8,11 +8,20 @@
         <router-link to="/shop">shop</router-link>
         <router-link to="/agreement">页面1</router-link>
         <router-link to="/agreement">页面1</router-link>
+        <button type="button" @click="showTip=true">消息提示</button>
         <button type="button" @click="closeModal">关闭列表</button>
     </div>
 
 
     <button type="button" @click="openModal" v-show="showModal == false" class="opt-btn">打开列表</button>
+
+    <!-- 弹出提示框 -->
+    <div class="bg-layer" v-show="showTip==true">
+      <div class="tip-box">
+        <button type="button" @click="showTip=flase">关闭提示</button>
+      </div>
+    </div>
+
   </div>
 </template>
 
@@ -20,7 +29,8 @@
 export default {
   data() {
     return {
-      showModal: true
+      showModal: true,
+      showTip: false
     };
   },
   methods: {
@@ -29,6 +39,9 @@ export default {
     },
     openModal() {
       this.showModal = true;
+    },
+    tip(){
+
     }
   }
 };
