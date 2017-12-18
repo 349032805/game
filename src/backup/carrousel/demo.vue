@@ -11,13 +11,14 @@ export default {
   data() {
     return {
       list: [
-        { content: 'a', color: "red" },
-        { content: 'b', color: "green" },
-        { content: 'c', color: "blue" }
+        { content: 1, color: "red" },
+        { content: 2, color: "green" },
+        { content: 3, color: "blue" }
       ]
     };
   },
   created() {
+    console.log("---------create");
   },
   methods: {},
   components: {

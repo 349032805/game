@@ -1,6 +1,8 @@
 <template>
    <div class="cascade-list">
-	 <div @click="selectImg(item,index)" v-for="(item, index) in items"  
+	 <button @click="toggleDir" class="toggle">切换方向:{{dir}}</button>
+	 <div @mouseover="clearTimer" 
+     @mouseout="setTimer" v-for="(item, index) in items"  
      class="item" :style="{width:item.width+'px', height:item.height+'px',
 			 left:item.left+'px',
 				 bottom:item.bottom+'px',
@@ -70,12 +72,17 @@ export default {
       obj.bottom = (that.allHeight - obj.height) / 2;
       items.push(obj);
     });
+    console.log(items);
     return {
       items: items,
-      rlist: rlist
+      rlist: rlist,
+      timer: null,
+      dir: "right"
     };
   },
   created() {
+    console.log("---------create");
+    this.setTimer();
   },
   methods: {
     copyArr(arr) {
@@ -87,31 +94,35 @@ export default {
         }
       });
     },
-    selectImg(item, index) {
-      let arr = [];
-      if (index == 0) {
-        arr.push(this.items[2]);
-        arr.push(this.items[0]);
-        arr.push(this.items[1]);
+    setTimer: function() {
+      let that = this;
+      this.clearTimer();
+      function cb() {
+        that.timer = setTimeout(function() {
+          if (that.dir == "right") {
+            let pop = that.items.shift();
+            that.items.push(pop);
+            //console.log(that.items)
+          } else {
+            let pop = that.items.pop();
+            that.items.unshift(pop);
+          }
+          cb();
+        }, 2000);
       }
-
-      if (index == 1) {
-        arr.push(this.items[0]);
-        arr.push(this.items[1]);
-        arr.push(this.items[2]);
+      cb();
+    },
+    clearTimer: function() {
+      if (this.timer) {
+        clearTimeout(this.timer);
       }
-
-      if (index == 2) {
-        arr.push(this.items[1]);
-        arr.push(this.items[2]);
-        arr.push(this.items[0]);
+    },
+    toggleDir: function() {
+      if (this.dir == "right") {
+        this.dir = "left";
+        return;
       }
-        console.log('----------')
-      console.log(arr)
-      console.log('----------')
-
-this.items = [];
-      this.items = arr;
+      this.dir = "right";
     }
   }
 };
