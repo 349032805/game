@@ -31,7 +31,7 @@ export default {};
   .agreement-warpper {
     width: 11.866667rem;
     height: 8.666667rem;
-    padding: 0.266667rem 0.266667rem 0 0.266667rem;
+    padding: 0.266667rem 0.1333rem 0 0.266667rem;
     overflow: hidden;
     box-sizing: border-box;
     margin: 0 auto;
