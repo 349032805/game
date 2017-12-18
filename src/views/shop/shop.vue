@@ -150,7 +150,7 @@ export default {
         display: inline-block;
         position: relative;
         height: 0.8rem;
-        line-height: 0.9rem;
+        line-height: 0.7rem;
         vertical-align: top;
       }
     }

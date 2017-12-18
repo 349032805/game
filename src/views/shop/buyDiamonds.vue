@@ -124,7 +124,7 @@
           > p {
             line-height: 1.1rem;
             color: #fffad0;
-            font-weight: lighter;
+            font-weight: normal;
           }
           > span {
             display: block;
