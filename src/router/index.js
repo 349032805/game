@@ -17,6 +17,7 @@ const diamondToCoin = r => require.ensure([], () => r(require('../views/shop/dia
 const rechargeAgreement = r => require.ensure([], () => r(require('../views/tipModal/rechargeAgreement')), 'rechargeAgreement')
 const systemTip = r => require.ensure([], () => r(require('../views/tipModal/systemTip')), 'systemTip')
 const errorTip = r => require.ensure([], () => r(require('../views/tipModal/errorTip')), 'errorTip')
+const carrouselDemo = r => require.ensure([], () => r(require('../views/carrousel/demo')), 'carrouselDemo')
 export default new Router({
   linkActiveClass: "active",
   routes: [
@@ -92,6 +93,10 @@ export default new Router({
       name: 'errorTip',
       component: errorTip
     },
-
+    {
+      path: '/carrouselDemo',
+      name: 'carrouselDemo',
+      component: carrouselDemo
+    }
   ]
 })

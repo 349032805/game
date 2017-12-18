@@ -6,7 +6,7 @@
         <router-link to="/loading/loadingGame">loadingGame</router-link>
         <router-link to="/loading/loadingYYL">loadingYyl</router-link>
         <router-link to="/shop">shop</router-link>
-        <router-link to="/agreement">页面1</router-link>
+        <router-link to="/carrouselDemo">旋转木马</router-link>
         <router-link to="/agreement">页面1</router-link>
         <button type="button" @click="showTip=true">消息提示</button>
         <button type="button" @click="closeModal">关闭列表</button>
