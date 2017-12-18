@@ -1,5 +1,8 @@
 <template>
     <div class="shop">
+      <div class="light-box">
+        <div class="light"></div>
+      </div>
         <div class="selections">
             <router-link  to="/shop/buyDiamonds" class="tab-items diamond-recharge">
             钻石充值
@@ -62,6 +65,15 @@ export default {
 };
 </script>
 <style lang="less">
+@keyframes logoMove {
+    0% {
+        left: -2.333333rem;
+    }
+   
+    100% {
+      left: 3.5rem;
+    }
+  }
 .shop {
   position: relative;
   overflow: hidden;
@@ -69,6 +81,22 @@ export default {
   height: 10rem;
   background: url("../../images/shop_beijing@3x.png") no-repeat center
     center/cover;
+  .light-box{
+    width: 3.12rem;
+    height: .8rem;
+    transform: skew(-66deg,3deg) rotate(10deg);
+    overflow: hidden;
+    position: relative;
+    top: .413333rem;
+    .light{
+      position: relative;
+      left: -1.333333rem;
+      width: 1.6rem;
+      height: 0.8rem;
+      background-image: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.6), transparent);
+      animation: 4s logoMove infinite;
+    }
+  }
   .selections {
     position: absolute;
     top: 1.7rem;
