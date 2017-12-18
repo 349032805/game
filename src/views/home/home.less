@@ -8,6 +8,7 @@
     }
   }
 
+// 星星动画
   @keyframes star {
     0% {
       -webkit-transform: scale(0.5);
@@ -24,17 +25,44 @@
       transform: scale(1.5);
       opacity: 1;
     }
-    80% {
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      opacity: 0.8;
-    }
     100% {
       -webkit-transform: scale(0.6);
       transform: scale(0.6);
       opacity: 0.6;
     }
   }
+
+  @keyframes buzz-out {
+    
+    0% {
+        transform: translate(0px, 0px) rotate(0deg)
+    }
+    5% {
+        transform: translate(0px, 0px) rotate(2.5deg)
+    }
+    15% {
+        transform: translate(0px, 0px) rotate(-4.5deg)
+    }
+    20% {
+        transform: translate(0px, 0px) rotate(2.5deg)
+    }
+    25% {
+        transform: translate(0px, 0px) rotate(4.5deg)
+    }
+    30% {
+        transform: translate(0px, 0px) rotate(-5.5deg)
+    }
+    35% {
+      transform: translate(0px, 0px) rotate(-4.5deg)
+    }
+    40% {
+      transform: translate(0px, 0px) rotate(2.5deg)
+    }
+    45% {
+        transform: translate(0px, 0px) rotate(-2.5deg)
+    }
+  }
+
 .home {
     width: 17.786667rem;
     height: 10rem;
@@ -257,10 +285,23 @@
                 position: absolute;
                 right: 0;
                 bottom: 0;
+                background: url("../../images/bg_shopping.png") no-repeat center/cover;
                 z-index: 200;
-                .shopping {
-                    width: 100%;
-                    height: 100%;
+                .text-shopping {
+                    width: .866667rem;
+                    position: absolute; 
+                    bottom: 1.333333rem;
+                    right: .533333rem;
+                    z-index: 300;
+                }
+                .box{
+                  width: 1.96rem;
+                  height: 1.76rem;
+                  background: url("../../images/box.png") no-repeat center/cover;
+                  animation: buzz-out 2s infinite;
+                  position: absolute;
+                  bottom: 0.1rem;
+                  right: 0;
                 }
                 .star{
                   width: .733333rem;
@@ -269,7 +310,8 @@
                   bottom: .6rem;
                   right: 1.3rem;
                   background: url("../../images/star.png") no-repeat center/cover;
-                  animation: star 3s 0.2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+                  animation: star 3s .2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+                  z-index: 220;
                 }
                 .star-small{
                   width: .56rem;
@@ -279,6 +321,7 @@
                   right: 0;
                   background: url("../../images/star_small.png") no-repeat center/cover;
                   animation: star 3s 2s infinite cubic-bezier(0.2, 0.68, 0.18, 1.08);
+                  z-index: 220;
                 }
             }
             

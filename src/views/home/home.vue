@@ -57,7 +57,8 @@
             <!-- 右下角宝箱 -->
             <div class="chest">
                 <div class="star"></div>
-                <img src="../../images/shopping.png" class="shopping">
+                <img src="../../images/text_shopping.png" class="text-shopping">
+                <div class="box"></div>
                 <div class="star-small"></div>
             </div>
         </div>
